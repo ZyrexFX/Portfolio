@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg: linear-gradient(#3f3f3f, #9c9c9c);
+  --scroll: linear-gradient(#9c9c9c, #3f3f3f);
+  --font: "Rubik", sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--scroll);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#918f8f, #918f8f);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(#525050, #525050)
+}
+
+.jumbotron {
+  padding-top: 9rem;
+  background-color: #9c9c9c;
+  height: 100vh;
+  width: 100%;
+}
+
+#projects {
+  background-color: #9c9c9c;
+}
+
+section {
+  padding-top: 4rem;
+}
+
+.navbar {
+  background-color: #3f3f3f;
+}
+
+.img-thumbnail {
+  width: 130px;
+  background-color: #525050;
+}
+
+.card {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.row {
+  padding-top: 2rem;
+}
+
+a {
+  color: rgb(125, 179, 179);
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(136, 136, 124);
+  text-decoration: underline;
+}
+
+nav a:link {
+  text-decoration: none;
+}
+
+.primary-tombol a {
+  display: inline-block;
+  background-color: #9c9c9c;
+  padding: 7px 14px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.primary-tombol {
+  padding-bottom: 20px;
+}
+
+#hal4 {
+  background-color: #9c9c9c;
+}
+
+footer {
+  text-align: center;
+  background-color: #3f3f3f;
+}
+
+footer ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0px 4px;
+}
+
+footer ul li a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  background-color: #9c9c9c;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 17px;
+}
+
+footer ul li a:hover {
+  color: #b4b4b4;
+  background-color: #6e6767;
+}
+
+footer p {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 0px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+footer em {
+  color: #3f3f3f;
+  font-weight: 600;
+  font-style: normal;
+}
