@@ -129,6 +129,14 @@ body {
   content: "\00a0";
 }
 
+.dropdown-item {
+  background-color: #9c9c9c;
+}
+
+.dropdown-item:hover {
+  background-color: #979696;
+}
+
 #projects {
   background-color: #9c9c9c;
 }
