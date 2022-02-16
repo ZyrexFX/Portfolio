@@ -80,7 +80,25 @@ body {
   transition: 0.3s;
   text-decoration: none;
 }
+
+#hall .card:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+  text-decoration: none;
+}
 /* End Media Hover */
+
+#lirik img {
+  border: 10px solid rgb(114, 114, 114);
+  border-radius: 5px;
+}
+
+.border {
+  border-width: 6px !important;
+  border-color: #3f3f3f !important;
+  border-radius: 8px;
+  background-color: #969393;
+}
 
 /* Tools */
 .tools {
@@ -158,6 +176,7 @@ section {
   background-color: #525050;
 }
 
+/* card */
 .card {
   padding-top: 5px;
   padding-right: 5px;
