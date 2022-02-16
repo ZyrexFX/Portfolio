@@ -1,5 +1,7 @@
 
+
 .containers {
+    box-sizing: border-box;
     width: 100vw;
     height: 90vh;
     display: flex;
@@ -67,13 +69,16 @@
 }
 
 .choice-container {
-    display: flex;
-    margin-bottom: 1.05rem;
-    width: 100%;
+    border-color: rgb(104, 105, 105);
+    border-width: 5px;
+    font-size: 1.5rem;
+    min-width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    background: rgb(126, 126, 126);
     border-radius: 8px;
-    background: #747474;
-    font-size: 2rem;
-    min-width: 60rem;
 }
 
 .choice-container:hover {
@@ -89,9 +94,6 @@
 } */
 
 .choice-text {
-    margin-top: 1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
     width: 100%;
     text-align: center;
 }
@@ -184,6 +186,6 @@ input::placeholder {
 
 @media screen and (max-width: 768px) {
     .choice-container {
-        min-width: 40rem;
-    } 
+        min-width: 20rem;
+    }
 }
