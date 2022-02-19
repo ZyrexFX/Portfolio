@@ -91,6 +91,7 @@ body {
 #lirik img {
   border: 10px solid rgb(114, 114, 114);
   border-radius: 5px;
+  width: 380px;
 }
 
 .border {
@@ -277,75 +278,56 @@ footer em {
   font-weight: 600;
   font-style: normal;
 }
-/* End footer */
 
-/* Wavy footer */
-/* #wavyFooter {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #000;
-  overflow: hidden;
+.container-sm {
+  border: 10px solid #3f3f3f;
+  background-color: #7a7a7a;
+  border-bottom: none;
+  padding-bottom: 2rem;
+  border-top: none;
 }
 
-#wavyFooter .wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 198px;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg");
-  background-size: 1600px 198px;
+@media screen and (max-width: 768px) {
+  #lirik img {
+    width: 350px;
+    height: auto;
+    align-items: center;
+  }
+  .pad-top {
+    padding-top: 1rem;
+  }
+  .jumbotron {
+    max-height: 600px;
+  }
 }
 
-#wavyFooter .wave .wave1 {
-  animation: animate-wave-1 10s linear infinite;
-  z-index: 1000;
-  opacity: 1;
-  animation-delay: 0s;
-  bottom: 0;
+@media screen and (max-width: 700px) {
+  #lirik img {
+    max-width: 350px;
+    height: auto;
+    align-items: center;
+  }
 }
 
-#wavyFooter .wave .wave2 {
-  animation: animate-wave-2 5s linear infinite;
-  z-index: 999;
-  opacity: 0.5;
-  animation-delay: -5s;
-  bottom: 10px;
+@media screen and (max-width: 500px) {
+  #lirik img {
+    width: 70vw;
+    height: auto;
+    align-items: center;
+  }
+  .jumbotron {
+    max-height: 590px;
+  }
 }
 
-#wavyFooter .wave .wave3 {
-  animation: animate-wave-3 10s linear infinite;
-  z-index: 998;
-  opacity: 0.2;
-  animation-delay: -2s;
-  bottom: 15px;
+@media screen and (max-width: 426px) {
+  #lirik-container {
+    font-size: smaller;
+  }
+  #lirik-container h3 {
+    font-size: larger;
+  }
+  .jumbotron {
+    max-height: 550px;
+  }
 }
-
-#wavyFooter .wave .wave4 {
-  animation: animate-wave-4 2s linear infinite;
-  z-index: 997;
-  opacity: 0.7;
-  animation-delay: -5s;
-  bottom: 20px;
-}
-
-@keyframes animate-wave-1 { 
-  0% { background-position-x: 0;}
-  100% { background-position-x: 1600px;}
-}
-
-@keyframes animate-wave-2 { 
-  0% { background-position-x: 0;}
-  100% { background-position-x: -1600px;}
-}
-
-@keyframes animate-wave-3 { 
-  0% { background-position-x: 0;}
-  100% { background-position-x: 1600px;}
-}
-
-@keyframes animate-wave-4 { 
-  0% { background-position-x: 0;}
-  100% { background-position-x: -1600px;}
-} */
