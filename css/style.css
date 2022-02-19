@@ -281,8 +281,18 @@ footer em {
 
 .container-sm {
   border: 10px solid #3f3f3f;
-  background-color: #7a7a7a;
+  background-color: #aaaaaa;
   border-bottom: none;
   padding-bottom: 2rem;
   border-top: none;
+}
+
+.line {
+  width: 20%;
+  height: 3rem;
+  border: 0 none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  background-color: #fff;
 }
