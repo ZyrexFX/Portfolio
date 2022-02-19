@@ -1,0 +1,113 @@
+@media screen and (max-width: 768px) {
+    #lirik img {
+      width: 350px;
+      height: auto;
+      align-items: center;
+    }
+    .pad-top {
+      padding-top: 1rem;
+    }
+    .jumbotron {
+      max-height: 600px;
+    }
+    #lirik-container {
+      font-size: smaller;
+    }
+    #lirik-container h3 {
+      font-size: larger;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    #lirik img {
+      max-width: 350px;
+      height: auto;
+      align-items: center;
+    }
+    #lirik-container {
+      font-size: smaller;
+    }
+    #lirik-container h3 {
+      font-size: larger;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    #lirik img {
+      width: 70vw;
+      height: auto;
+      align-items: center;
+    }
+    .jumbotron {
+      max-height: 590px;
+    }
+    #lirik-container {
+      font-size: smaller;
+    }
+    #lirik-container h3 {
+      font-size: larger;
+    }
+  }
+  
+  @media screen and (max-width: 426px) {
+    #lirik-container {
+      font-size: smaller;
+    }
+    #lirik-container h3 {
+      font-size: larger;
+    }
+    .jumbotron {
+      max-height: 550px;
+    }
+  }
+  
+  @media screen and (max-width: 418px) {
+    #lirik-container {
+      font-size: 16px;
+    }
+    #lirik-container h3 {
+      font-size: larger;
+    }
+    .jumbotron {
+      max-height: 550px;
+    }
+  }
+  
+  @media screen and (max-width: 415px) {
+    #lirik-container {
+      font-size: 15.5px;
+    }
+    #lirik-container h3 {
+      font-size: larger;
+    }
+    .jumbotron {
+      max-height: 550px;
+    }
+  }
+  
+  @media screen and (max-width: 396px) {
+    #lirik-container {
+      font-size: 15px;
+    }
+    #lirik-container h3 {
+      font-size: larger;
+    }
+  }
+  
+  @media screen and (max-width: 386px) {
+    #lirik-container {
+      font-size: 14px;
+    }
+    #lirik-container h3 {
+      font-size: larger;
+    }
+  }
+  
+  @media screen and (max-width: 367px) {
+    #lirik-container {
+      font-size: 13.5px;
+    }
+    #lirik-container h3 {
+      font-size: larger;
+    }
+  }
