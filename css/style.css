@@ -237,7 +237,7 @@ nav a:link {
   background-color: #858585;
   position: fixed;
   bottom: 16px;
-  left: 20px;
+  right: 20px;
   width: 35px;
   height: 35px;
   border-radius: 18%;
