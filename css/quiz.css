@@ -149,14 +149,14 @@
 #progressBar {
     width: 15rem;
     height: 2rem;
-    border: 0.2rem solid #54ec61;
+    border: 0.2rem solid #4e4e4e;
     border-radius: 50px;
     overflow: hidden;
 }
 
 #progressBarFull {
     height: 100%;
-    background: #54ec61;
+    background: #4e4e4e;
     width: 0%;
 }
 

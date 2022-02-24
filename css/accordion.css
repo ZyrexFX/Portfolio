@@ -42,9 +42,7 @@
 
 .accordion .contentBx.active .content {
     height: 100%;
-    max-height: 300px;
+    max-height: 100%;
     padding: 15px;
     border-radius: 8px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
 }
