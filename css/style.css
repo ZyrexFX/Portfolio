@@ -75,7 +75,8 @@ body {
 #home .fa-steam:hover,
 #home .fa-youtube:hover,
 #home .fa-discord:hover,
-#home .fa-github:hover {
+#home .fa-github:hover,
+#home .fa-spotify:hover {
   transform: scale(1.3);
   transition: 0.2s;
   text-decoration: none;
@@ -103,6 +104,10 @@ body {
 
 #home .fa-discord:hover {
   color: #536DFE;
+}
+
+#home .fa-spotify:hover {
+  color: #1DB954;
 }
 
 #hall .card:hover{
