@@ -122,7 +122,7 @@ body {
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: .07s;
+  transition: .03s;
 }
 
 .cursor2 {
@@ -135,7 +135,7 @@ body {
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: .05s;
+  transition: .01s;
 }
 
 .cursor:hover {
