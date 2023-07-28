@@ -82,7 +82,6 @@ body {
   transform: scale(1.3);
   transition: 0.2s;
   text-decoration: none;
-  z-index: 2;
 }
 
 #home .fa-instagram,
@@ -111,6 +110,12 @@ body {
   opacity: 1;
 }
 
+/* Profile pict shadow */
+.rounded-circle {
+  box-shadow: 0 0.4rem 1.4rem 0 #000000;
+  min-width: 12rem;
+}
+
 /* Cursor animation */
 .cursor {
   position: fixed;
@@ -122,25 +127,29 @@ body {
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: .03s;
+  transition: .038s;
+  mix-blend-mode: difference;
 }
 
 .cursor2 {
   position: fixed;
   width: 5px;
   height: 5px;
-  background-color: #323232;
+  /* background-color: #323232; */
   border-radius: 50%;
+  border: 3px solid #323232;
   left: 0;
   top: 0;
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: .01s;
+  mix-blend-mode: difference;
 }
 
-.cursor:hover {
+.fa-discord:hover ~ .cursor2 {
   transform: translate(-50%, -50%) scale(1.5);
-  background-color: #fff;
+  transition: .5;
+  background-color: #ffffff;
   opacity: .5;
 }
 
@@ -194,12 +203,21 @@ body {
 
 /* Tools */
 .tools {
-  cursor: pointer;
   font-size: 40px;
   margin: 10px !important;
 }
 
 .tools:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+.tool {
+  font-size: 40px;
+  margin: 20px !important;
+}
+
+.tool:hover {
   transform: scale(1.3);
   transition: 0.3s;
 }
@@ -417,6 +435,12 @@ footer em {
   border-bottom: none;
   padding-bottom: 2rem;
   border-top: none;
+}
+
+@media screen and (max-width: 768px) {
+  .rounded-circle {
+    min-width: 10rem;
+  }
 }
 
 /* .line {
