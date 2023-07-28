@@ -44,6 +44,7 @@
     background: rgb(126, 126, 126);
     border-radius: 8px;
     border: 5px solid #6b6666;
+    transition: transform 150ms;
 }
 
 .button:hover {
