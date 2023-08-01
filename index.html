@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/css/responsive-lyrics-page.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/weather.css">
+    <link rel="stylesheet" href="/css/jikan.css">
 
     <!-- Scrip aing -->
     <script src="/js/weather.js" defer></script>
@@ -211,38 +212,157 @@
     </section>
     <!-- End -->
 
-    <!-- Yas -->
-    <div id="weather-page">
-      <div class="container">
-        <div class="row justify-content-center fs-5 text-center">
-          <h1 class="mb-3" style="margin-top: 4rem;">Weather App</h1>
-          <div class="col-7">
-              <p>Simply type the city or country name to see the current weather data.</p>
-          </div>
-      </div>
-      <div class="weather-wrap">
-          <div class="card-weather">
-            <div class="search">
-              <input type="text" class="search-bar" placeholder="Search">
-              <button class="weather-btn"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.4em" width="1.4em" xmlns="http://www.w3.org/2000/svg"><path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"></path><path d="M11.412,8.586C11.791,8.966,12,9.468,12,10h2c0-1.065-0.416-2.069-1.174-2.828c-1.514-1.512-4.139-1.512-5.652,0 l1.412,1.416C9.346,7.83,10.656,7.832,11.412,8.586z"></path></svg></button>
+    <!-- Weather Section -->
+    <section id="weather">
+      <div id="weather-page">
+        <div class="container">
+          <div class="row justify-content-center fs-5 text-center">
+            <h1 class="mb-3" style="margin-top: 4rem;">Weather App</h1>
+            <div class="col-7">
+                <p>Simply type the city or country name to see the current weather data.</p>
             </div>
-            <div class="weather loading">
-              <h2 class="city mt-3">Weather in Bogor</h2>
-              <h1 class="temp">28°C</h1>
-              <h5 class="feels-temp">Feels Like: 32</h5>
-            <div class="flex-icon">
-              <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon">
-              <div class="main-temp" style="margin-left: 6px;">Rainy</div>
-              <div class="description">(Thunderstorm)</div>
-            </div>
-              <div class="humidity">Humidity: 80%</div>
-              <div class="wind">Wind Speed: 5.1 km/h</div>
-            </div>
-          </div>
         </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3f3f3f" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,192C480,203,600,149,720,144C840,139,960,181,1080,176C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" style="--darkreader-inline-fill:#3f3f3f;" data-darkreader-inline-fill=""></path></svg>
+        <div class="weather-wrap">
+            <div class="card-weather">
+              <div class="search">
+                <input type="text" class="search-bar" placeholder="Search">
+                <button class="weather-btn"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.4em" width="1.4em" xmlns="http://www.w3.org/2000/svg"><path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"></path><path d="M11.412,8.586C11.791,8.966,12,9.468,12,10h2c0-1.065-0.416-2.069-1.174-2.828c-1.514-1.512-4.139-1.512-5.652,0 l1.412,1.416C9.346,7.83,10.656,7.832,11.412,8.586z"></path></svg></button>
+              </div>
+              <div class="weather loading">
+                <h2 class="city mt-3">Weather in Bogor</h2>
+                <h1 class="temp">28°C</h1>
+                <h5 class="feels-temp">Feels Like: 32</h5>
+              <div class="flex-icon">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon">
+                <div class="main-temp" style="margin-left: 6px;">Rainy</div>
+                <div class="description">(Thunderstorm)</div>
+              </div>
+                <div class="humidity">Humidity: 80%</div>
+                <div class="wind">Wind Speed: 5.1 km/h</div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#9c9c9c" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,138.7C384,139,480,181,576,181.3C672,181,768,139,864,122.7C960,107,1056,117,1152,138.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>   
     <!-- End -->
+
+    <!-- START ANIME -->
+    <section id="mal">
+      <div class="container">
+        <div class="text-center mb-1">
+          <div class="col">
+            <h2>Hello there filthy weebs</h2>
+            <div class="justify-content-center fs-5 text-center">
+              <p>I do watch anime, but rarely read manga. Here's my recent activity.</p>
+              <h3 class="text-decoration-underline">Anime</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center  text-start" style="padding-top: 1rem;">
+
+          <!-- Start First Card -->
+          <div class="col-md-3 mb-4">
+            <div class="card card-color">
+              <div style="height: 250px;">
+                <img id="act1" src="/img/Waifu/Megumi/megu1.png" class="card-img-top imgList" alt="Waifu #1"></div>
+
+                <div class="card-body text-light pb-0">
+                  <h5 class="card-title myclass" id="judul">Card title</h5>
+
+                  <div class="pb-2">
+                    <span class="badge bg-warning text-dark"><i class="fa-solid fa-star pe-1"></i><i id="score" class="fst-normal"></i></span>
+                  </div>
+
+                  <div class="pheight pb-0">
+                    <span class="badge rounded-pill rounded-pill me-2 mb-2" id="genre1"></span>
+                    <span class="badge rounded-pill me-2 mb-2" id="genre2"></span>
+                    <span class="badge rounded-pill me-2 mb-2" id="genre3"></span>
+                  </div>
+                  <i id="status" class="fw-bold"></i>
+                  
+                  <p class="card-text mb-2 mt-2" id="syn">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <i class="fas fa-clock me-2"></i><i id="waktu" class="fst-normal"></i>
+                </div>
+
+                <div class="card-body text-center mt-2 mb-2">
+                  <a href="#" class="card-link box" >Read More</a>
+                  <a href="#" target="_blank" id="linkMore" class="card-link box"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <!-- Second Card -->
+          <div class="col-md-3 mb-4">
+            <div class="card card-color">
+              <div style="height: 250px;">
+                <img id="act2" src="/img/Waifu/Megumi/megu1.png" class="card-img-top imgList" alt="Waifu #1"></div>
+
+                <div class="card-body text-light pb-0">
+                  <h5 class="card-title myclass" id="judul2">Card title</h5>
+
+                  <div class="pb-2">
+                    <span class="badge bg-warning text-dark"><i class="fa-solid fa-star pe-1"></i><i id="score2" class="fst-normal"></i></span>
+                  </div>
+
+                  <div class="pheight pb-0">
+                    <span class="badge rounded-pill me-2 mb-2" id="genre11"></span>
+                    <span class="badge rounded-pill me-2 mb-2" id="genre22"></span>
+                    <span class="badge rounded-pill me-2 mb-2" id="genre33"></span>
+                  </div>
+                  <i id="status2" class="fw-bold"></i>
+                  
+                  <p class="card-text mb-2 mt-2" id="syn2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <i class="fas fa-clock me-2"></i><i id="waktu2" class="fst-normal"></i>
+                </div>
+
+                <div class="card-body text-center mt-2 mb-2">
+                  <a href="#" class="card-link box" >Read More</a>
+                  <a href="#" target="_blank" id="linkMore2" class="card-link box"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <!-- Third Card -->
+          <div class="col-md-3 mb-4">
+            <div class="card card-color">
+              <div style="height: 250px;">
+                <img id="act3" src="/img/Waifu/Megumi/megu1.png" class="card-img-top imgList" alt="Waifu #1"></div>
+
+                <div class="card-body text-light pb-0">
+                  <h5 class="card-title myclass" id="judul3">Card title</h5>
+
+                  <div class="pb-2">
+                    <span class="badge bg-warning text-dark"><i class="fa-solid fa-star pe-1"></i><i id="score3" class="fst-normal"></i></span>
+                  </div>
+
+                  <div class="pheight pb-0">
+                    <span class="badge rounded-pill me-2 mb-2" id="genre111"></span>
+                    <span class="badge rounded-pill me-2 mb-2" id="genre222"></span>
+                    <span class="badge rounded-pill me-2 mb-2" id="genre333"></span>
+                  </div>
+                  <i id="status3" class="fw-bold"></i>         
+                  
+                  <p class="card-text mb-2 mt-2" id="syn3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <i class="fas fa-clock me-2"></i><i id="waktu3" class="fst-normal"></i>
+                </div>
+
+                <div class="card-body text-center mt-2 mb-2">
+                  <a href="#" class="card-link box" >Read More</a>
+                  <a href="#" target="_blank" id="linkMore3" class="card-link box"><i class="fas fa-link"></i></a>
+                </div>
+
+            </div>
+          </div>
+
+
+          
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3f3f3f" fill-opacity="1" d="M0,32L60,69.3C120,107,240,181,360,192C480,203,600,149,720,144C840,139,960,181,1080,176C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" style="--darkreader-inline-fill:#3f3f3f;" data-darkreader-inline-fill=""></path></svg>
+    </section>
+    <!-- End -->
+
     <div id="toTop">
     <a href="#" class="to-top">
       <div class="fas fa-chevron-up"></div>
@@ -277,5 +397,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="/js/back-to-top.js"></script>
     <script src="/js/cursor.js"></script>
+    <script src="/js/jikan-api.js"></script>
+    <script src="/node_modules/moment/moment.js"></script>
+    <script>
+    fetch('https://api.jikan.moe/v4/users/z-fx/userupdates', {
+      "method": "GET"
+    })
+    .then(response => response.json())
+    .then(response => {
+      moment().format();
+  
+      document.getElementById('waktu').innerText = moment(response.data.anime[0].date).fromNow(true) + ' ago';
+  
+      document.getElementById('waktu2').innerText = moment(response.data.anime[1].date).fromNow(true) + ' ago';
+  
+      document.getElementById('waktu3').innerText = moment(response.data.anime[2].date).fromNow(true) + ' ago';
+    })
+    </script>
   </body>
 </html>
