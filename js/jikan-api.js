@@ -3,7 +3,7 @@ fetch('https://api.jikan.moe/v4/users/z-fx/userupdates', {
 })
 .then(response => response.json())
 .then(response => {
-    console.log(response.data.anime);
+    // console.log(response.data.anime);
 
     let num = Number(response.data.anime[0].episodes_seen);
     let num2 = Number(response.data.anime[0].episodes_seen);
@@ -29,7 +29,7 @@ fetch('https://api.jikan.moe/v4/users/z-fx/userupdates', {
     })
     .then(response => response.json())
     .then(response => {
-        console.log(response.data)
+        // console.log(response.data)
 
         document.getElementById('score').innerText = response.data.score
 
@@ -56,7 +56,7 @@ fetch('https://api.jikan.moe/v4/users/z-fx/userupdates', {
     })
     .then(response => response.json())
     .then(response => {
-        console.log(response.data)
+        // console.log(response.data)
 
         document.getElementById('score2').innerText = response.data.score;
 
@@ -83,7 +83,7 @@ fetch('https://api.jikan.moe/v4/users/z-fx/userupdates', {
     })
     .then(response => response.json())
     .then(response => {
-        console.log(response.data)
+        // console.log(response.data)
 
         document.getElementById('score3').innerText = response.data.score;
 
