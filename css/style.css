@@ -78,7 +78,8 @@ body {
 #home .fa-youtube:hover,
 #home .fa-discord:hover,
 #home .fa-github:hover,
-#home .fa-spotify:hover {
+#home .fa-spotify:hover,
+#home .fa-keyboard:hover {
   transform: scale(1.3);
   transition: 0.2s;
   text-decoration: none;
@@ -89,7 +90,8 @@ body {
 #home .fa-youtube,
 #home .fa-discord,
 #home .fa-github,
-#home .fa-spotify {
+#home .fa-spotify,
+#home .fa-keyboard {
   transition: 0.2s;
   text-decoration: none;
 }
@@ -180,6 +182,9 @@ body {
 #home .fa-spotify:hover {
   color: #1DB954;
 }
+#home .fa-keyboard:hover {
+  color: #E2B714;
+}
 
 #hall .card:hover{
   transform: scale(1.05);
@@ -214,21 +219,23 @@ body {
 .tools {
   font-size: 40px;
   margin: 10px !important;
+  transition: .2s;
 }
 
 .tools:hover {
   transform: scale(1.3);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .tool {
   font-size: 40px;
   margin: 20px !important;
+  transition: .2s;
 }
 
 .tool:hover {
   transform: scale(1.3);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 /* End Tools */
 
@@ -276,6 +283,7 @@ body {
 
 #about {
   background-color: #6d6c6c;
+  transition: .5s;
 }
 
 #weather {
