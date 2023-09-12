@@ -8,6 +8,9 @@
     height: 38px;
     overflow: auto;
 }
+.pheight-2 {
+    overflow: auto;
+}
 
 .pb-1 {
     padding-bottom: 0.25rem !important;
@@ -39,12 +42,19 @@
 .modal1 {
     position: fixed;
     z-index: 999;
+    opacity: 0;
+    pointer-events: none;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #aeaeae;
+    background-color: rgba(0, 0, 0, .5);
     transition: opacity .5s ease;
+}
+
+.modal1.show {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modal-wrap {
@@ -58,7 +68,7 @@
 }
 
 .modal-container {
-    width: 40%;
+    width: 60%;
     max-height: 70%;
     margin: 0 auto;
     border-radius: 10px;
@@ -66,4 +76,42 @@
     transition: all .3s ease;
     flex-direction: column;
     display: flex;
+    background-color: rgb(42, 45, 45) !important;
 }
+
+.modal-judul {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.modal1 a {
+    color: #ffffff;
+}
+
+.modal-box {
+    margin: 20px 0;
+    overflow-y: scroll;
+    max-height: inherit;
+}
+
+.tanggal {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.tanggal-airing {
+    font-weight: 300;
+}
+
+.foto-modal {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+}
+
+@media screen and (max-width: 580px) {
+    .modal-container {
+        width: 90%;
+    }
+    }
