@@ -493,7 +493,7 @@
     <script src="/js/cursor.js"></script>
     <script src="/js/jikan-api.js"></script>
     <script src="js/moment.js"></script>
-    <script src="/js/modal.js"></script>
+    <!-- <script src="/js/modal.js"></script> -->
     <script>
     fetch('https://api.jikan.moe/v4/users/z-fx/userupdates', {
       "method": "GET"
@@ -510,8 +510,8 @@
 
       var tanggal = tgl.format("ddd, MMM Do YYYY");
 
-      console.log(tanggal);
-      console.log(tglCrop2)
+      // console.log(tanggal);
+      // console.log(tglCrop2)
   
       document.getElementById('waktu').innerText = moment(response.data.anime[0].date).fromNow(true) + ' ago';
   
