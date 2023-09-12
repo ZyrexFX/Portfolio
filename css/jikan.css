@@ -33,7 +33,7 @@
     
 }
 .box:hover {
-    cursor: pointer;s
+    cursor: pointer;
     transition: all 0.5s;
     background-color: #ffffff;
     border: 2px solid #ffffff;
@@ -41,7 +41,7 @@
 
 .modal1 {
     position: fixed;
-    opacity: 0;
+    opacity: 0!important;
     pointer-events: none;
     top: 0;
     left: 0;
