@@ -37,7 +37,7 @@ fetch('https://api.jikan.moe/v4/users/z-fx/userupdates', {
 
         if (response.data.title.length >= 25) {
           response.data.title = document.getElementById('judul').innerText = response.data.title.substr(0, 22) + '...';
-        } else document.getElementById('judul').innerText = response.data.title;
+        } else document.getElementById('judul').innerText = response.data.title + " - " + response.data.type;
 
         document.getElementById('act1').src = `${response.data.images.jpg.large_image_url}`;
 
@@ -64,7 +64,7 @@ fetch('https://api.jikan.moe/v4/users/z-fx/userupdates', {
 
         if (response.data.title.length >= 25) {
           response.data.title = document.getElementById('judul2').innerText = response.data.title.substr(0, 22) + '...';
-        } else document.getElementById('judul2').innerText = response.data.title;
+        } else document.getElementById('judul2').innerText = response.data.title + " - " + response.data.type;
 
         document.getElementById('act2').src = `${response.data.images.jpg.large_image_url}`;
 
@@ -91,7 +91,7 @@ fetch('https://api.jikan.moe/v4/users/z-fx/userupdates', {
 
         if (response.data.title.length >= 25) {
           response.data.title = document.getElementById('judul3').innerText = response.data.title.substr(0, 22) + '...';
-        } else document.getElementById('judul3').innerText = response.data.title;
+        } else document.getElementById('judul3').innerText = response.data.title + " - " + response.data.type;
 
         document.getElementById('act3').src = `${response.data.images.jpg.large_image_url}`;
 
