@@ -392,6 +392,23 @@ nav a:link {
   background-color: #9C9C9C;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* PFP */
+#pfp:hover {
+  content: url(/img/pfpBrutalism.png);
+  transition: .5s;
+  animation: fadeIn .5s;
+}
+#pfp {
+  transition: .5s;
+  animation: fadeIn .5s;
+}
+/* END */
+
 /* Footer */
 footer {
   text-align: center;
