@@ -10,11 +10,23 @@
 body {
   font-family: var(--font);
   background: var(--bg);
+  overflow: hidden;
   /* cursor: pointer; */
 }
 
 .mc {
   font-size: 29px !important;
+}
+
+#preloader {
+  background: #222121 url('../img/loader.gif') no-repeat center Center;
+  background-size: 5%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 5000;
+  overflow-y: hidden;
+  transition: all 1s ease;
 }
 
 /* Scroll bar  */
@@ -389,10 +401,10 @@ nav a:link {
 }
 
 /* PFP */
-#pfp:hover {
+/* #pfp:hover {
   content: url(/img/pfpBrutalism.png);
   transition: opacity 0.5s ease-in-out;
-}
+} */
 /* END */
 
 
