@@ -62,6 +62,11 @@
           </ul>
         </div>
       </div>
+      <div class="preloader-wrapper">
+        <div class="spinner-border text-secondary" style="width: 5rem; height: 5rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
     </nav>
     <!-- Ahir Navbar -->
     
@@ -303,6 +308,12 @@
                 this.classList.toggle('active')
             })
         }
+        const preload = document.querySelector('.preloader-wrapper')
+
+        window.addEventListener('load', function() {
+        preload.classList.add('fade-out-animation')
+        document.body.style.overflow = 'unset';
+    })
     </script>
     <script src="/js/back-to-top.js"></script>
     <script src="/js/cursor.js"></script>

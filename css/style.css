@@ -29,6 +29,24 @@ body {
   transition: all 1s ease;
 }
 
+.preloader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease;
+}
+
+.fade-out-animation {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* Scroll bar  */
 ::-webkit-scrollbar {
   width: 10px;
