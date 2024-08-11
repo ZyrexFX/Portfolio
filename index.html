@@ -298,45 +298,34 @@
                 </div>
 
                 <div class="card-body text-center">
-                  <a id="open1">
-                    <button class="btn-more"><i class="fa-solid fa-arrow-up-right-from-square pe-2"></i>Read More</button>
-                  </a>
+                  
+                    <button class="btn-more" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-arrow-up-right-from-square pe-2"></i>Read More</button>
+                  
                   <a href="#" target="_blank" id="linkMore"><button class="btn-more ms-3"><i class="fas fa-link"></i></button></a>    
                 </div>
             </div>
           </div>
+
+          <!-- Modal -->
+          <!-- <div class="modal fade modal-color" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-container">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium alias quasi placeat ipsum architecto? Obcaecati at fugiat alias, quae optio cum asperiores dolorum beatae autem ex! Nihil in accusamus dignissimos deleniti cum minus delectus! Natus voluptate id quo enim saepe sapiente, ab cum, hic animi suscipit sint tempora accusantium beatae.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
           <style>
-            .btn-more:hover {
-              transition: .5s;
-              background-color: #ffffffcc;
-              border: solid 2px #ffffffcc;
-              color: #14456d;
-            }
-            .btn-more {
-            padding: 8px;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 7px;
-            background-color: #ffffff00;
-            border: solid 2px #79b2e0;
-            color: #77B3B3;
-            transition: .5s;
-            }
-            .btn {
-              display: inline-block;
-              font-weight: 400;
-              color: #fff;
-              text-align: center;
-              vertical-align: center;
-              user-select: none;
-              background-color: transparent;
-              border: 2px solid #fff;
-              padding: .37rem 0.7rem;
-              font-size: 1rem;
-              line-height: 1.5;
-              border-radius: .25rem;
-              width: 20% !important;
-            }
+            
 
           </style>
 
@@ -407,38 +396,45 @@
           </div>
 
           <!-- MODAL START -->
-          <!-- <div class="modal1">
-            <div class="modal-wrap">
-              <div class="modal-container">
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-wrap modal-dialog modal-lg" id="modalBox">
+              <div class="modal-content modal-container">
                 <div class="modal-judul px-4 pt-3">
                   <span>
-                    <a href="">Judul</a>
+                    <a id="modal-judul1" href="#" target="_blank">Judul</a>
                   </span>
-                  <a href="#mal" class="pull-right" style="font-size: 1em; float: right;" aria-hidden="true"><i class="fa-solid fa-xmark"></i></a>
+                  <a href="#mal" class="pull-right" style="font-size: 1em; float: right;" aria-hidden="true" data-bs-dismiss="modal" aria-label="close"><i class="fa-solid fa-xmark"></i></a>
                   <hr class="my-1" style="color: rgb(169, 163, 154);">
                 </div>
                 <div class="text-light modal-box my-0 pb-0 px-4 pt-0">
                   <div class="tanggal mb-2">
-                    <div>Airing from: <span>Wed, Aug 2nd 2023 - 1 Days ago</span></div>
+                    <div><span style="font-weight: 600;">Aired from: </span><span id="modal-airing1">Wed, Aug 2nd 2023 - <span id="modal-ago1">1 Days ago</span></span></div>
                   </div>
-                  <h5 class="mb-2 mt-2"><span class="badge bg-warning text-dark"><i class="fa-solid fa-star pe-1"></i><i id="" class="fst-normal">8.34</i></span></h5> -->
+                  <h5 class="mb-2 mt-2"><span class="badge bg-warning text-dark"><i class="fa-solid fa-star pe-1"></i><i id="score-modal1" class="fst-normal">8.34</i></span></h5>
 
                   <!-- Modal Genres -->
-                  <!-- <div class="pheight-2">
-                    <span class="badge rounded-pill rounded-pill me-2 mb-2" id="genre1">Fantasy</span>
-                    <span class="badge rounded-pill me-2 mb-2" id="genre2">Comedy</span>
-                    <span class="badge rounded-pill me-2 mb-2" id="genre3">Action</span>
-                  </div> -->
+                  <div class="pheight-2">
+                    <span class="badge rounded-pill rounded-pill me-2 mb-2" id="modal-genre1"></span>
+                    <span class="badge rounded-pill me-2 mb-2" id="modal-genre2"></span>
+                    <span class="badge rounded-pill me-2 mb-2" id="modal-genre3"></span>
+                  </div>
 
                   <!-- Modal Themes -->
-                  <!-- <div class="pheight-2">
-                    <span class="badge me-2 mb-2 bg-success" id="genre1">Adult Cast</span>
-                    <span class="badge me-2 mb-2 bg-success" id="genre2">Workplace</span>
-                    <span class="badge me-2 mb-2 bg-success" id="genre3">Mythology</span>
+                  <div class="pheight-2">
+                    <span class="badge me-2 mb-2 bg-success" id="modal-theme1"></span>
+                    <span class="badge me-2 mb-2 bg-success" id="modal-theme2"></span>
+                    <span class="badge me-2 mb-2 bg-success" id="modal-theme3"></span>
+                    <span class="badge me-2 mb-2 bg-success" id="modal-theme4"></span>
                   </div><hr class="my-1">
 
                   <div style="text-align: left;">
-                  <img src="https://cdn.myanimelist.net/images/anime/1927/132758l.jpg" align="right" width="250" class="foto-modal" style="margin: 5px 0px 10px 10px;" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laudantium reiciendis sint amet deserunt dolorum recusandae sit, nam, est explicabo facilis officia dolores ea praesentium aspernatur nobis ab eaque. Officiis, doloremque voluptatibus est, mollitia quod ea voluptate exercitationem molestiae temporibus sed sequi! Officia delectus magni laudantium voluptatem omnis culpa saepe maxime minus quisquam amet ducimus ipsum, repellendus dolores, ad, explicabo hic dolorum corrupti quis fugiat maiores. Odit quidem, illum aliquid sapiente nesciunt laborum recusandae distinctio earum corrupti necessitatibus nam fuga a pariatur hic quia incidunt consectetur officiis dignissimos quod mollitia aperiam dicta perspiciatis iste delectus? Officia quos aut impedit id.</div><br>
+                  <div>
+                    <img id="img-modal1" src="https://cdn.myanimelist.net/images/anime/1927/132758l.jpg" align="right" width="250" class="foto-modal" style="margin: 5px 0px 10px 10px;" alt="">
+                  </div>
+                  <div id="modal-syn1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laudantium reiciendis sint amet deserunt dolorum recusandae sit, nam, est explicabo facilis officia dolores ea praesentium aspernatur nobis ab eaque. Officiis, doloremque voluptatibus est, mollitia quod ea voluptate exercitationem molestiae temporibus sed sequi! Officia delectus magni laudantium voluptatem omnis culpa saepe maxime minus quisquam amet ducimus ipsum, repellendus dolores, ad, explicabo hic dolorum corrupti quis fugiat maiores. Odit quidem, illum aliquid sapiente nesciunt laborum recusandae distinctio earum corrupti necessitatibus nam fuga a pariatur hic quia incidunt consectetur officiis dignissimos quod mollitia aperiam dicta perspiciatis iste delectus? Officia quos aut impedit id.
+                  </div>
+                  </div><br>
                   <p>
                     <b>Completed - 12 of 12 episodes, 2 days ago</b>
                   </p>
@@ -453,12 +449,12 @@
 
                 <div class="justify-content-center text-center pb-3">
                   <button class="btn text-light me-3">MAL</button>
-                  <button id="close" class="btn text-light">Back</button>
+                  <button id="close" class="btn text-light" type="button" data-bs-dismiss="modal">Back</button>
                 </div>
 
               </div>
             </div>
-          </div> -->
+          </div>
           <!-- End Modal -->
           
           </div>
@@ -491,7 +487,7 @@
                 <li><a target="blank_" href="https://discord.com/users/373404212748484608"><i class="fa-brands fa-discord"></i></a></li>
                 <li><a target="blank_" href="https://open.spotify.com/user/fz6ay9ngi0tc7qae4ia8kjr7i"><i class="fa-brands fa-spotify"></i></a></li>
             </ul>
-                  <p>&copy; 2023 Tazky Ferliansyah</p>
+                  <p>&copy; 2024 Tazky Ferliansyah</p>
                   </div>
               </div>
           </div>
@@ -512,6 +508,7 @@
     .then(response => response.json())
     .then(response => {
       moment().format();
+      // console.log(response.data.anime[0].date)
 
       // console.log(response.data.anime[0].date);
       let tglCrop = response.data.anime[0].date;
@@ -545,6 +542,11 @@
         preload.classList.add('fade-out-animation')
         document.body.style.overflow = 'unset';
       })
+
+    const modal = document.getElementById('modalBox')
+    const body = document.querySelector('body')
+    
+    
 
     </script>
   </body>
