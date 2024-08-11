@@ -4,6 +4,7 @@ async function getResponse() {
     method: 'GET',
   });
   const data = await response.json();
+  moment().format();
   // console.log(data.data.anime[0].entry.title)
 
   // CARD 1 SECTION
@@ -12,7 +13,46 @@ async function getResponse() {
     method: 'GET',
   });
   const dataSatu = await reponseSatu.json();
-  // Data buat judul card 1
+
+  // Sinopsis modal box 1
+  try {
+    document.getElementById('modal-airing1').innerText = moment(dataSatu.data.aired.from).format('DDD MMMM YYYY') + ' - ' + moment(dataSatu.data.aired.from).fromNow(true) + " ago";
+    
+    // Image modal 1
+    document.getElementById('img-modal1').src = dataSatu.data.images.jpg.large_image_url;
+
+    // Synopsis modal 1
+    document.getElementById('modal-syn1').innerText = dataSatu.data.synopsis;
+
+    // Judul modal 1
+    document.getElementById('modal-judul1').innerText = dataSatu.data.title;
+    document.getElementById('modal-judul1').href = dataSatu.data.url;
+
+    // Score modal 1
+    document.getElementById('score-modal1').innerText = dataSatu.data.score;
+
+    // Genre modal 1
+    document.getElementById('modal-genre1').innerText = dataSatu.data.genres[0].name;
+    document.getElementById('modal-genre2').innerText = dataSatu.data.genres[1].name;
+    document.getElementById('modal-genre2').innerText = dataSatu.data.genres[2].name;
+
+  } catch (e) {
+    console.log('Modal box error')
+  }
+
+  try {
+        // Theme modal 1
+        document.getElementById('modal-theme1').innerText = dataSatu.data.themes[0].name;
+        document.getElementById('modal-theme2').innerText = dataSatu.data.themes[1].name;
+        document.getElementById('modal-theme3').innerText = dataSatu.data.themes[2].name;
+        document.getElementById('modal-theme4').innerText = dataSatu.data.themes[3].name;
+  } catch (e) {
+    console.log('Themes error')
+  }
+
+  console.log(dataSatu)
+
+  // Data buat score card 1
   document.getElementById('score').innerText = dataSatu.data.score;
 
   // Data buat link card 1
