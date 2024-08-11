@@ -70,6 +70,11 @@ body {
   width: 100%;
 }
 
+/* Modal Box */
+.modal-color {
+  background: rgba(0, 0, 0, 0.25)!important;
+}
+
 /* Panah */
 .m-top {
   margin-top: 50px;
@@ -97,6 +102,40 @@ body {
   }
 }
 /* End panah */
+
+/* Button CSS */
+.btn-more:hover {
+  transition: .5s;
+  background-color: #ffffffcc;
+  border: solid 2px #ffffffcc;
+  color: #14456d;
+}
+.btn-more {
+padding: 8px;
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 7px;
+background-color: #ffffff00;
+border: solid 2px #79b2e0;
+color: #77B3B3;
+transition: .5s;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: center;
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: .37rem 0.7rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  width: 20% !important;
+}
+/* End button css */
 
 /* Media Hover */
 #home .fa-instagram:hover,
